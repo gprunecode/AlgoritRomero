@@ -1,0 +1,299 @@
+%%
+%% (
+%%  )\ )                             (
+%%  (()/(   (            (             )\  )   (
+%%   /(_))  ))\   (       ))\  (   (   (()/(   ))\
+%%   (_))  /((_)  )\  )  /((_) )\  )\   ((_))/((_)
+%%   | _ \(_))(  _(_/( (_) )  ((_)((_)  _| |(_))
+%%   |   /| || || ' \))/ -_)/ _|/ _ \/ _` |/ -_)
+%%   |_|_\ \_,_||_||_| \___|\__|\___/\__,_|\___|
+%%
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} % Paquete para incluir imágenes en el documento LaTeX
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{varwidth}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{multirow}
+
+\usepackage[a4paper,rmargin=1.5cm,lmargin=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage{pdfpages}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usemintedstyle[cpp]{monokai}
+\usemintedstyle[python]{paraiso-dark}
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{DarkGray}{gray}{0.1}
+\definecolor{MidGray}{gray}{0.8}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\setlength{\parindent}{0px}  % Setea la indentacion de la primera linea de cada parrafo a cero pixeles.
+
+
+\title{Resolución de la primera semana}
+\author{@RuneCode}
+
+\begin{document}
+%% Portada
+\includepdf{./portada/portada.pdf}
+
+
+%-----------------------------------------------------------------------------------------
+%Primer problema
+\section{Primera Semana}%
+En esta clase se revisaron los temas de:
+\begin{itemize}
+\item \textbf{Tipos de Datos} (numéricos y de caracteres)
+\item \textbf{Estructura de escritura en pseudocódigo}
+\item \textbf{Operadores aritméticos y de asignación}
+\end{itemize}
+\vspace{1cm}
+\textbf{Nota:} Te recomendamos realizar los ejercicios antes de ver su solución
+ya que el objetivo de este documento es presentarte una de las muchas posibles
+soluciones. Si tienes alguna sugerencia de mejora puedes comunicarte por correo
+a la dirección \href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+
+\section{Ejemplos}%
+\textbf{\textit{Problema 1}} Hallar el área de un triángulo\\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001.algo}
+
+%C++
+\textit{Resolución en C++}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/ejercicio1.cpp}
+\clearpage
+
+%Python
+\textit{Resolución en Python}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{python}
+{./python/ejercicio1.py}
+
+\textbf{Nota:} Los paréntesis en las operaciones aritméticas solo se usan
+cuando son realmente necesarios, si no es así mostraría la inexperiencia del
+programador.
+\vspace{1cm}
+
+
+%---------------------------------------------------------------------------------
+%Segundo problema
+
+\textbf{\textit{Problema 2}} Hallar el área de un círculo\\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002.algo}
+
+
+%C++
+\textit{Resolución en C++}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/ejercicio2.cpp}
+\clearpage
+
+%Python
+\textit{Resolución en Python}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{python}
+{./python/ejercicio2.py}
+
+\textbf{Nota:} Definir la constante \texttt{pi} sería una línea extra que no aportaría mucho, por el contrario si nos vieramos en un problema en el cuál se utilice muchas veces este parámetro, sí nos sería de utilidad ya que en vez de escribir un número de muchos dígitos, escribiríamos una palabra de 2 letras. 
+\vspace{1cm}
+%------------------------------------------------------------------------------------
+%Tercer problema
+
+\textbf{\textit{Problema 3}} Hallar el valor de Y dada la ecuación\\
+$$Y=(5x-9)(x+8)(x-6)$$ \\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003.algo}
+
+
+%C++
+\textit{Resolución en C++}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/ejercicio3.cpp}
+\clearpage
+
+%Python
+\textit{Resolución en Python}\\
+
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{python}
+{./python/ejercicio3.py}
+
+\textbf{Nota:} Tanto en el pseudocódigo como en la programación en C++ la única forma de leer una multiplicación es mediante el símbolo del asterísco. 
+%---------------------------------------------------------------------------------
+%Cuarto problema
+
+\textbf{\textit{Problema 4}} Hallar el valor de Z dada la ecuación\\
+$$\frac{x}{y}(z+w)=1$$ \\
+\textit{Resolución en pseudocódigo}\\ 
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/004.algo}
+
+
+%C++
+\textit{Resolución en C++}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/ejercicio4.cpp}
+\clearpage
+
+%Python
+\textit{Resolución en Python}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{python}
+{./python/ejercicio4.py}
+
+\textbf{Nota:} Para el nivel de experiencia que se espera a este punto, el programador todavía no es capaz de realizar bucles o condicionales por lo que no habría manera de saber si el usuario coloca el valor de $0$ en los parámetros de x o y. 
+\vspace{1cm}
+%---------------------------------------------------------------------------------
+
+
+\end{document}

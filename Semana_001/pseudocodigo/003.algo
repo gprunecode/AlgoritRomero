@@ -1,0 +1,11 @@
+Acción HallarY
+  
+  D.V.
+  Real x // Entrada
+  Real y // Salida
+
+  Inicio
+    Leer(x)
+    y = (5*x-9)*(x+8)*(x-6)
+    Escribir(y)
+  Fin

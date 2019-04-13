@@ -1,0 +1,11 @@
+Acción HallarAreaCirculo
+
+  D.V.
+  Real radio  // Entrada
+  Real area   // Salida
+
+  Inicio
+    Leer(radio)
+    area = 3.14159*radio**2
+    Escribir(area)
+  Fin

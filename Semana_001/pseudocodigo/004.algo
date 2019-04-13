@@ -1,0 +1,11 @@
+Acción HallarZ
+
+  D.V.
+  Real x,y,w // Entrada
+  Real z // Salida
+
+  Inicio
+    Leer(x,y,w)
+    z = y/x - w
+    Escribir(z)
+  Fin
