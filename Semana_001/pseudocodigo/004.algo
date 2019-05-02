@@ -6,6 +6,6 @@ Acción HallarZ
 
   Inicio
     Leer(x,y,w)
-    z = y/x - w
+    z <- y/x - w
     Escribir(z)
   Fin

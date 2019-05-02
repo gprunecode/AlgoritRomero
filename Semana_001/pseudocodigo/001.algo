@@ -1,4 +1,4 @@
-Acción HallarAreaTriangulo
+Accion HallarAreaTriangulo
 
   D.V.
   Real base, altura //Entrada
@@ -6,6 +6,6 @@ Acción HallarAreaTriangulo
 
   Inicio
     Leer(base, altura)
-    area = base*altura/2
+    area <- base*altura/2
     Escribir(area)
   Fin

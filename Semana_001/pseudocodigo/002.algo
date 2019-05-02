@@ -6,6 +6,6 @@ Acción HallarAreaCirculo
 
   Inicio
     Leer(radio)
-    area = 3.14159*radio**2
+    area <- 3.14159*radio**2
     Escribir(area)
   Fin

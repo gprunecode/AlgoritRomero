@@ -60,7 +60,7 @@ class PseudocodeLexer(RegexLexer):
                   r'booleens?|tableaux?|rien)\s*\b', 
                   Keyword.Type),
 
-                  (r'\b(verdadero|falso|nil|acción)\s*\b',
+                  (r'\b(verdadero|falso|nil|accion)\s*\b',
                    Name.Constant),
                   
                  # Operators
