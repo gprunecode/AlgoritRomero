@@ -1,0 +1,16 @@
+Accion EcuacionCuadratica
+DV
+  Real a,b,c   // Entrada
+  Real x1,x2   // Salida
+  Real disc
+Inicio
+  leer(a, b, c)
+  disc <- b**2 - 4ac
+  Si disc>=0 entonces
+    x1 <- (-b + disc**(1/2))/(2a)
+    x2 <- (-b - disc**(1/2))/(2a)
+    Escribir(x1, x2)
+  Sino
+    Escribir("No existen raices reales")
+  FSi
+Fin

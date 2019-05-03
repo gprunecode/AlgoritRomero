@@ -1,0 +1,17 @@
+Accion Ingresos
+DV
+  real consumo      // entrada
+  real importe      // salida
+Inicio
+  leer(consumo)
+  Si consumo<100 entonces
+    importe <- consumo*1
+  Sino
+    Si consumo<=500 entonces
+      importe <- consumo*1.5
+    Sino
+      importe <- consumo*2
+    FSi
+  FSi
+  escribir(importe)
+Fin

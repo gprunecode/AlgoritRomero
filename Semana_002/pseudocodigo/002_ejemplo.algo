@@ -1,0 +1,15 @@
+Accion Ingresos
+DV
+  real basico         // entrada
+  real anti           // entrada
+  real bono, total    // salida
+Inicio
+  leer(basico, anti)
+  Si anti>10 entonces
+    bono <- basico*0.1
+  Sino
+    bono <- basico*0.05
+  FSi
+  total <- basico + bono
+  escribir(bono, total)
+Fin

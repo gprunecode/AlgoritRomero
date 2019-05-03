@@ -1,0 +1,432 @@
+%%
+%% (
+%%  )\ )                             (
+%%  (()/(   (            (             )\  )   (
+%%   /(_))  ))\   (       ))\  (   (   (()/(   ))\
+%%   (_))  /((_)  )\  )  /((_) )\  )\   ((_))/((_)
+%%   | _ \(_))(  _(_/( (_) )  ((_)((_)  _| |(_))
+%%   |   /| || || ' \))/ -_)/ _|/ _ \/ _` |/ -_)
+%%   |_|_\ \_,_||_||_| \___|\__|\___/\__,_|\___|
+%%
+
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} % Paquete para incluir imágenes en el documento LaTeX
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{varwidth}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{multirow}
+
+\usepackage[a4paper,rmargin=1.5cm,lmargin=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage{pdfpages}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usemintedstyle[cpp]{monokai}
+\usemintedstyle[python]{paraiso-dark}
+\usemintedstyle[./pseudocode.py:PseudocodeLexer -x]{rainbow_dash}
+\definecolor{LightGray}{gray}{0.98}
+\definecolor{DarkGray}{gray}{0.1}
+\definecolor{MidGray}{gray}{0.8}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\setlength{\parindent}{0px}  % Setea la indentacion de la primera linea de cada parrafo a cero pixeles.
+
+
+\title{Resolución de la primera semana}
+\author{@RuneCode}
+
+\begin{document}
+%% Portada
+\includepdf{./portada/portada.pdf}
+
+
+%% ####################################################################################
+%%    Inicio del Documento
+%% ####################################################################################
+\section*{Segunda Semana}%
+En esta clase se revisaron los temas de:
+\begin{itemize}
+\item \textbf{Condicional Simple}
+\item \textbf{Condicional Doble}
+\item \textbf{Condicional anidado}
+\item \textbf{Condicional múltiple}
+\item \textbf{Uso de operadores lógicos}
+\end{itemize}
+\vspace{1cm}
+\textbf{Nota:} Te recomendamos realizar los ejercicios antes de ver su solución
+ya que el objetivo de este documento es presentarte una de las muchas posibles
+soluciones y así tengas una modelo con el que puedas comparar. Si tienes alguna
+sugerencia de mejora puedes comunicarte por correo a la dirección
+\href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+
+%% ####################################################################################
+%%    Condicional Simple
+%% ####################################################################################
+\section{Condicional Simple}%
+Ejecuta las sentencias en el caso que la expresion lógica sea Verdad.
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/condicional_simple.algo}
+
+
+\subsection*{Ejemplo 1}%
+Los trabajadores con más de 10 años de antigüedad recibirán un bono de 10\% de
+su básico. Hallar bono y total ingresos.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_ejemplo.algo}
+\clearpage
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/001_ejemplo.cpp}
+
+
+%% ####################################################################################
+%%    Condicional Doble
+%% ####################################################################################
+\section{Condicional Doble}%
+Ejecuta sentenciaV si expresionLogica es Verda y ejecutará setenciaF si
+expresionLogica es Falsa.
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/condicional_doble.algo}
+
+
+\subsection*{Ejemplo 2}%
+Los trabajadores con más de 10 años de antigüedad recibirán un bono de 10\% de
+su básico, los demás sólo 5\%. Hallar bono y total de ingresos.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_ejemplo.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejemplo.cpp}
+
+
+%% ####################################################################################
+%%    Condicional Anidado
+%% ####################################################################################
+\section{Condicional Anidado}%
+Se ubica un condicional simple o doble dentro de otro condicional. Se puede
+anidar en la parte entonces o en sino. Se sugiere ubicar el anidamiento en la
+sección sino.
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/condicional_anidado.algo}
+
+
+\subsection*{Ejemplo 3}%
+La empresa "Sedapal" facturará para consumos inferiores a 100 $m^3$, S/.1 x
+$m^3$ para consumos de 100 hasta 500 $m^3$, S/.1.5 x $m^3$ y para consumos
+superiores a 500 $m^3$, S/.2 x $m^3$. Hallar importe a pagar.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003_ejemplo.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/003_ejemplo.cpp}
+
+
+%% ####################################################################################
+%%    Condicional Multiple
+%% ####################################################################################
+\section{Condicional Múltiple}%
+Usaremos caso ... vale. Sólo una de las opciones será verdadera y se ejecutarán
+las sentencias asociadas a ella. La variable evaluada debe ser entera o
+carácter.
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/condicional_multiple.algo}
+
+\subsection*{Ejemplo 4}%
+Ingresar un entero (de 1 a 7) y mostrar el día correspondiente.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/004_ejemplo.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/004_ejemplo.cpp}
+
+
+%% ####################################################################################
+%%    Operadores logicos
+%% ####################################################################################
+\section{Uso de operadores lógicos}%
+\begin{itemize}
+  \item El resultado de una expresión lógica es el valor verdadero o falso.
+  \item Operadores relacionales: \textbf{$=$, $<>$, $<$, $<=$, $>$, $>=$}
+  \item Operadores Lógicos: \textbf{No, Y, O}
+  \item Para plantear expresiones lógicas más complejas se puede usar operadores lógicos.
+\end{itemize}
+
+\subsection*{Ejercicio 1}%
+Calcular las raíces de una ecuación de segundo grado. Considere las diferentes
+situaciones que se pueden dar.
+
+\begin{equation*}
+  x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation*}
+
+%Pseudocódigo
+\textit{Resolución en pseudocódigo}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_ejercicio.algo}
+
+%C++
+\textit{Resolución en C++}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/001_ejercicio.cpp}
+
+\clearpage
+
+\subsection*{Ejercicio 2}%
+Calcular el pago por ciclo de un alumno de una Universidad, si se ingresan,
+créditos inscritos, categoría, matrícula (1: normal, 2: extemporánea). El pago
+por crédito depende de la categoría de acuerdo a la siguiente tabla:
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      CATEGORÍA & PAGO CRÉDITO \\
+      \hline \hline
+      A & 125.00 \\ \hline
+      B & 150.00 \\ \hline
+      C & 180.00 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+Por matrícula extemporánea se paga un recargo de 40.00 soles.\\
+
+%Pseudocódigo
+\textit{Resolución en pseudocódigo}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_ejercicio.algo}
+
+%C++
+\textit{Resolución en C++}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejercicio.cpp}
+
+
+
+%---------------------------------------------------------------------------------
+\vspace{3cm} 
+\section*{¡Envianos tus soluciones!}
+Si estás llevando este curso con los profesores Cabrera, Romero o Salinas;
+envíanos tus soluciones en los diferentes lenguajes de programación que
+conozcas al correo \href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+n.n \\ 
+
+Las mejores soluciones tanto en el algoritmo como en el código, serán
+publicadas en las siguientes ediciones de estos documentos.\\ \\
+
+El asunto del correo debe estar de la siguiente manera:\\
+$NumeroDeSesion-Profesor-NumeroDeEjercicio$ \\ \\
+Por ejemplo:  \\
+$01-Romero-01$ \\
+
+Y dentro del correo adjuntar tu solución y nombre como quieras ser reconocido en caso de ser electo.
+
+\vspace{2cm}
+\LARGE\textit{RuneCode}
+
+
+\end{document}

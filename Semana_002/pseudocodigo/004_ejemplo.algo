@@ -1,0 +1,17 @@
+Accion Ingresos
+DV
+  entero dia      // entrada
+  cadena nombre   // salida
+Inicio
+  leer(dia)
+  Caso dia vale
+    1: nombre <- "Lunes"
+    2: nombre <- "Marte"
+    3: nombre <- "Miércoles"
+    4: nombre <- "Jueves"
+    5: nombre <- "Viernes"
+    6: nombre <- "Sábado"
+    7: nombre <- "Domingo"
+  FCaso
+  escribir(nombre)
+Fin

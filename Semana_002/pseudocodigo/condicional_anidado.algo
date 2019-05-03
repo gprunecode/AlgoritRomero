@@ -1,0 +1,9 @@
+Si expresionLogica entonces
+  SentenciaV1
+Sino
+  Si expresionLogica entonces
+    Sentencia V2
+  Sino
+    SentenciaF
+  FSi
+FSi
