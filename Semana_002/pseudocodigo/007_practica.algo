@@ -1,0 +1,18 @@
+Accion montoAlquiler
+D.V.
+  Entero distancia, monto
+Inicio
+  Leer(distancia)
+
+  Si distancia <= 300 entonces
+    monto <- 250
+  Sino
+    Si distancia <= 1000 entonces
+      monto <- 250 + 30*(distancia - 300)
+    Sino
+      monto <- 250 + 30*(1000 - 300) + 20*(distancia - 1000)
+    FSi
+  FSi
+
+  Escribir(monto)
+Fin

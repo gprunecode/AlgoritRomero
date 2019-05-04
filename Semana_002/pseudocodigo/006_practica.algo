@@ -1,0 +1,22 @@
+Accion horaSegundo
+D.V.
+  Entero hora, minuto, segundo
+Inicio
+  leer(hora, minuto, segundo)
+
+  segundo <- segundo + 1
+
+  Si segundo = 60 entonces
+    minuto <- minuto + 1
+    segundo <- 0
+    Si minuto = 60 entonces
+      hora <- hora + 1
+      minuto <- 0
+      Si hora = 24 entonces
+        hora <- 0
+      FSi
+    FSi
+  FSi
+
+  Escribir(hora, minuto, segundo)
+Fin

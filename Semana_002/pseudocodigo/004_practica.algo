@@ -1,0 +1,25 @@
+Accion minutos
+D.V.
+  Entero dias, minutos, horas
+Inicio
+  Leer(minutos)
+
+  dias <- 0
+  horas <- 0
+
+  Si minutos >= 1440 entonces
+    dias <- minutos / 1440
+    minutos <- minutos mod 1440
+    Si minutos >= 60 entonces
+      horas <- minutos / 60
+      minutos <- minutos mod 60
+    FSi
+  Sino
+    Si minutos >= 60 entonces
+      horas <- minutos / 60
+      minutos <- minutos mod 60
+    FSi
+  FSi
+
+  Escribir(dias, horas, minutos)
+Fin

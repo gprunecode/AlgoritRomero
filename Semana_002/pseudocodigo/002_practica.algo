@@ -1,0 +1,21 @@
+Accion SueldoDescuento
+D.V.
+  Real descuento, sueldo, sueldoNeto, adicional
+Inicio
+  leer(sueldo)
+
+  Si sueldo <= 1000 entonces
+    descuento <- 0.1*sueldo
+  Sino
+    Si sueldo <= 2000 entonces
+      adicional <- sueldo - 1000
+      descuento <- 0.1*1000 + 0.05*adicional
+    Sino
+      adicional <- sueldo - 2000
+      descuento <- 0.1*1000 + 0.05*1000 + 0.03*adicional
+    FSi
+  FSi
+
+  sueldoNeto <- sueldo - descuento
+  Escribir(sueldoNeto)
+Fin

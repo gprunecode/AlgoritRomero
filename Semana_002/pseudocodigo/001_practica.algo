@@ -1,0 +1,23 @@
+Accion pago
+D.V.
+  Entero totalHoras, pagoHora    // Entrada
+  Real totalPago                 // Salida
+  Entero horasExtra
+  Real descuento
+Inicio
+  leer(totalHoras, pagoHora)
+
+  Si totalHoras > 40 entonces
+    horasExtra <- totalHoras - 40
+    totalPago <- 40*pagoHora + horasExtra*pagoHora*1.5
+  Sino
+    totalPago <- totalHoras * pagoHora
+  FSi
+
+  Si totalPago > 500 entonces
+    descuento <- 0.1*totalPago
+    totalPago <- totalPago - descuento
+  FSi
+
+  Escribir(totalPago)
+Fin

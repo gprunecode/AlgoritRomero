@@ -1,0 +1,17 @@
+Accion comision
+D.V.
+  Real comision, ventas
+Inicio
+  Leer(ventas)
+  Si ventas <= 150 entonces
+    comision  <- 0
+  Sino
+    Si ventas <= 400 entonces
+      comision <- 0.1*ventas
+    Sino
+      comision <- 50 + 0.09*ventas
+    FSi
+  FSi
+
+  Escribir(comision)
+Fin

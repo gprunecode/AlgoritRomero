@@ -1,0 +1,20 @@
+Accion registro
+D.V.
+  Entero estado, sexo, edad
+  Cadena estadoCivil
+Inicio
+  Leer(sexo, edad, estado)
+
+  Caso estado vale
+    1: estadoCivil <- "soltero"
+    2: estadoCivil <- "casado"
+    3: estadoCivil <- "viudo"
+    4: estadoCivil <- "divorciado"
+  FCaso
+
+  Si sexo=1 entonces
+    Escribir(edad, ", hombre, ", estadoCivil)
+  Sino
+    Escribir(edad, ", mujer, ", estadoCivil)
+  FSi
+Fin

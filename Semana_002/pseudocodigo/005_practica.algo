@@ -1,0 +1,24 @@
+Accion triangulo
+D.V.
+  Real a, b, c
+Inicio
+  Leer(a, b, c)
+
+  Si a > abs(b-c) Y a < b+c entonces
+    Escribir("Pertenecen a un triangulo ")
+    Si a=b entonces
+      Si b=c entonces
+        Escribir("equilatero.")
+      Sino
+        Escribir("isosceles.")
+      FSi
+    Sino
+      Si b=c entonces
+        Escribir("isosceles.")
+      Sino
+        Escribir("escaleno.")
+      FSi
+  Sino
+    Escribir("No pertenecen a un triangulo.")
+  FSi
+Fin
