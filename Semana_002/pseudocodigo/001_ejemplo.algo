@@ -1,5 +1,5 @@
 Accion Ingresos
-DV
+D.V.
   real basico          // entrada
   real anti            // entrada
   real bono, total     // salida

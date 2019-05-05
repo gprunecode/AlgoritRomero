@@ -3,23 +3,23 @@ using namespace std;
 
 int main(void)
 {
-  int yr;
+  int yy;
 
   cout << "Ingrese un anio: ";
-  cin >> yr;
+  cin >> yy;
 
-  if (yr%4 == 0) {
-    if (yr%100 == 0) {
-      if (yr%400 == 0) {
-        cout << yr << " es bisiesto" << endl;
+  if (yy%4 == 0) {
+    if (yy%100 == 0) {
+      if (yy%400 == 0) {
+        cout << yy << " es bisiesto" << endl;
       } else {
-        cout << yr << " no es bisiesto" << endl;
+        cout << yy << " no es bisiesto" << endl;
       }
     } else {
-      cout << yr << " es bisiesto" << endl;
+      cout << yy << " es bisiesto" << endl;
     }
   } else {
-    cout << yr << " no es bisiesto" << endl;
+    cout << yy << " no es bisiesto" << endl;
   }
 
   return 0;
