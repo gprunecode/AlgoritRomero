@@ -1,0 +1,31 @@
+Accion PromedioNotas
+D.V.
+  Real nota1, nota2, nota3, nota4, nota5, nota6, promedio, minimo
+Inicio
+  Leer(nota1, nota2, nota3, nota4, nota5, nota6)
+
+  minimo <- nota1
+
+  Si minimo > nota2 entonces
+    minimo <- nota2
+  Sino
+    Si minimo > nota3 entonces
+      minimo <- nota3
+    Sino
+      Si minimo > nota4 entonces
+        minimo <- nota4
+      Sino
+        Si minimo > nota5 entonces
+          minimo <- nota5
+        Sino
+          si minimo > nota6 entonces
+            minimo <- nota6
+          FSi
+        FSi
+      FSi
+    FSi
+  FSi
+
+  promedio <- (nota1 + nota2 + nota3 + nota4 + nota5 + nota6 - minimo)/5
+  Escribir(promedio)
+Fin

@@ -747,37 +747,102 @@ de S/.50 más el 9\% de las ventas.\\
 {cpp}
 {./cpp/009_practica.cpp}
 
+\subsection*{Ejercicio 10}%
+Dada la ecuación de la recta $y = mx + c$, y la ecuación de la circunferencia
+$(x-a)^2+(y-b)^2 = r^2$, determinar los puntos de intersección de la recta con
+la circunferencia, y analizar si la recta es secante o tangente a la
+circunferencia.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/010_practica.algo}
 
 
+\subsection*{Ejercicio 11}%
+Se necesita un sistema para un supermercado, en el cual si el monto de la
+compra del cliente es mayor de \$5000 se le hará un descuento del 30\%, si es
+menor o igual a \$5000 pero mayor que \$3000 será del 20\%, si no rebasa los
+\$3000 pero si los \$1000 la rebaja efectiva es del 10\% y en caso de que no
+rebase los \$1000 no tendrá beneficio.\\
 
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/011_practica.algo}
 
+\subsection*{Ejercicio 12}%
+Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades
+si este se le asigna como un porcentaje de su salario mensual que depende de su
+antigüedad en la empresa de acuerdo con la siguiente tabla:\\
 
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      Tiempo & Utilidad \\
+      \hline \hline
+      Menos de 1 año & 5\% del salario \\ \hline
+      1 año o más y menos de 2 años & 7\% del salario \\ \hline
+      2 años o más y menos de 5 años & 10\% del salario \\ \hline
+      5 años o más y menos de 10 años & 15\% del salario \\ \hline
+      10 años o más & 20\% del salario \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
 
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/012_practica.algo}
 
+\subsection*{Ejercicio 13}%
+Dado un número entero; determinar si el mismo es par, impar o nulo.\\
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/013_practica.algo}
 
 
 \subsection*{Ejercicio 14}%
@@ -815,6 +880,129 @@ bisiestos, salvo si ellos son también múltiplos de 400 (2000 es bisiesto, pero
 ]
 {cpp}
 {./cpp/014_practica.cpp}
+
+
+\subsection*{Ejercicio 15}%
+Elaborar un algoritmo en el que a partir de una fecha introducida por el
+teclado con el formato Día, Mes, año, se obtenga la fecha del día siguiente.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/015_practica.algo}
+
+\subsection*{Ejercicio 16}%
+La cantidad de días transcurridos entre dos fechas puede calcularse
+transformándolas en días Julianos. Esta es una convención astronómica que
+representa cada fecha como el número de días transcurridos desde el 1 de enero
+de 4713 AC. Para transformar una fecha expresada como DIA, MES Y AÑO en días
+Julianos se usa la siguiente fórmula:\\
+$DJ = ENT(365.25*AP) + ENT(30.6001*MP) + DIA + 1720982$, donde DJ es el día
+Juliano, y AP y MP son dos constantes que se obtiene como sigue:\\
+Si MES = 1 ó 2: AP = ANO - 1 MP = MES + 13\\
+Si MES $>$ 2: AP = AÑO MP = MES + 1\\
+La cantidad de días entre dos fechas es igual a la diferencia entre los respectivos días Julianos:
+dias = (dia Juliano2) - (dia Juliano 1)\\
+Preparar un programa para ingresar las dos fechas como DIA1, MES1, AÑO1, Y
+DIA2, MES2, AÑO2 respectivamente, y muestre la cantidad de días transcurridos
+entre ambas.\\
+
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/016_practica.algo}
+
+\subsection*{Ejercicio 17}%
+Determinar la cantidad de dinero que recibirá un trabajador por concepto de las
+horas extras trabajadas en une empresa, sabiendo que cuando las horas de
+trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan
+al doble de una hora normal cuando no exceden de 8; si las horas extras exceden
+de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales y
+el resto al triple.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/017_practica.algo}
+
+\subsection*{Ejercicio 18}%
+En una tienda de descuento se efectúa una promoción en la cual se hace un
+descuento sobre el valor de la compra total según el color de la bolita que el
+cliente saque al pagar en caja. Si la bolita es de color blanco no se le hará
+descuento alguno, si es verde se le hará un 10\% de descuento, si es amarilla
+un 25\%, si es azul un 50\% y si es roja un 100\%. Determinal la cantidad final
+que el cliente deberá pagar por su compra. Se sabe que sólo hay bolitas de los
+colores mencionados.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/018_practica.algo}
+
+\subsection*{Ejercicio 19}%
+Ingrese seis notas y calcule el promedio, considerando las 5 mejores notas.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/019_practica.algo}
+
+
+
+
+
+
 
 
 %---------------------------------------------------------------------------------

@@ -64,7 +64,7 @@ class PseudocodeLexer(RegexLexer):
                    Name.Constant),
                   
                  # Operators
-                 (r'(<=|>=|<>|<-|\^|\*|\+|-|\/|<|>|=|\\\\|mod|←|↑|≤|≥|≠|÷|×|\.\.|\[|\]|\.|not|xou|and|or)',
+                 (r'(<=|>=|<>|<-|\^|\*|\+|-|\/|<|>|=|\\\\|mod|←|↑|≤|≥|≠|÷|×|\.\.|\[|\]|\.|xou|and|or)',
                   op_replace),
                   
                  (r'(\(|\)|\,|\;|:)',

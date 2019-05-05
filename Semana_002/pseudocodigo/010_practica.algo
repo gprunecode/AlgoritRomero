@@ -1,0 +1,26 @@
+Accion PuntosInterseccion
+D.V.
+  Real m, c, a, b, r, p, q, s, x1, x2, y1, y2, disc
+Inicio
+  Leer(m, c, a, b, r)
+  p <- m**2 + 1
+  q <- -(2*a + 2*m*(b-c))
+  s <- (b-c)**2 - r**2 + a**2
+  disc <- p**2 - 4*q*s
+
+  Si disc < 0 entonces
+    Escribir("La recta no intersecta con la circunferencia")
+  Sino
+    Si disc > 0 entonces
+      x1 <- (-q + (disc)**(1/2))/(2*p)
+      x2 <- (-q - (disc)**(1/2))/(2*p)
+      y1 <- m*x1 + c
+      y2 <- m*x2 + c
+      Escribir("Recta secante en los puntos ", x1, y1, x2, y2)
+    Sino
+      x1 <- (-q + (disc)**(1/2))/(2*p)
+      y1 <- m*x1 + c
+      Escribir("Recta es tangente en el punto ", x1, y1)
+    FSi
+  FSi
+Fin

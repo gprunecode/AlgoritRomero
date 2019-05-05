@@ -1,0 +1,25 @@
+Accion montoCompra
+D.V.
+  Real monto, descuento, montoNeto
+Inicio
+  Leer(monto)
+  Si monto > 5000 entonces
+    descuento <- 0.3*monto
+    montoNeto <- monto -descuento
+  Sino
+    Si monto > 3000 entonces
+      descuento <- 0.2*monto
+      montoNeto <- monto - descuento
+    Sino
+      Si monto > 1000 entonces
+        descuento <- 0.1*monto
+        montoNeto <- monto - descuento
+      Sino
+        descuento <- 0
+        montoNeto <- monto - descuento
+      FSi
+    FSi
+  FSi
+  Escribir(montoNeto)
+Fin
+

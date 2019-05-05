@@ -1,0 +1,30 @@
+Accion DiasTranscurridos
+D.V.
+  Entero dd1, dd2, mm1, mm2, yy1, yy2, AP1, AP2, MP1, MP2, DJ1, DJ2, dias
+Inicio
+  Leer(dd1, mm1, yy1, dd2, mm2, yy2)
+  Si mes > 2 entonces
+    AP1 <- yy1
+    MP1 <- mm1 + 1
+  Sino
+    AP1 <- yy1 - 1
+    MP1 <- mm1 + 13
+  FSi
+  DJ1 <- Entero(365.25*AP1) + Entero(30.6001*MP1) + dd1 + 1720982
+
+  Si mes > 2 entonces
+    AP2 <- yy2
+    MP2 <- mm2 + 1
+  Sino
+    AP2 <- yy2 - 1
+    MP2 <- mm2 + 13
+  FSi
+  DJ2 <- Entero(365.25*AP2) + Entero(30.6001*MP2) + dd2 + 1720982
+
+  Si DJ1 > DJ2 entonces
+    dias <- DJ1 - DJ2
+  Sino
+    dias <- DJ2 - DJ1
+  FSi
+  Escribir(dias)
+Fin

@@ -1,0 +1,19 @@
+Accion PagoHorasExtras
+D.V.
+  Entero horas, HorasExtra
+  Real PagoHora, PagoTotal
+Inicio
+  Leer(horas, PagoHora, PagoTotal)
+  Si horas > 40 entonces
+    HorasExtra <- horas - 40
+    Si HorasExtra <= 8 entonces
+      PagoTotal <- 40*PagoHora + HorasExtra*PagoHora*2
+    Sino
+      HorasExtra <- HorasExtra - 8
+      PagoTotal <- 40*PagoHora + 8*PagoHora*2 + HorasExtra*PagoHora*3
+    FSi
+  Sino
+    PagoTotal <- horas*PagoHora
+  FSi
+  Escribir(PagoTotal)
+Fin

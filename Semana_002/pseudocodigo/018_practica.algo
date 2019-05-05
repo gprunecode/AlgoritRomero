@@ -1,0 +1,16 @@
+Accion DescuentoCompra
+D.V.
+  Real descuento, compra
+  Entero color
+Inicio
+  Leer(compra, color)
+  Caso color vale
+    1: descuento <- 0
+    2: descuento <- 0.1*compra
+    3: descuento <- 0.25*compra
+    4: descuento <- 0.5*compra
+    5: descuento <- 1*compra
+  FCaso
+  PagoTotal <- compra - descuento
+  Escribir(PagoTotal)
+Fin

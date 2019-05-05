@@ -1,0 +1,15 @@
+Accion TipoNumero
+D.V.
+  Entero num
+Inicio
+  Leer(num)
+  Si num = 0 entonces
+    Escribir("Es nulo")
+  Sino
+    Si num mod 2 = 0 entonces
+      Escribir("Es par")
+    Sino
+      Escribir("Es impar")
+    FSi
+  FSi
+Fin
