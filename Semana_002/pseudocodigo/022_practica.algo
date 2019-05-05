@@ -1,0 +1,24 @@
+Accion menuVolumenFiguras
+
+   DV
+	Entero opcion
+	Real b,a,p,r
+
+   INICIO
+	Leer(opcion)
+	
+	caso opcion vale
+	  1:
+	    Leer(b,a,p)
+	    Escribir(b*a*p)
+	  2:
+	    Leer(r,a)
+	    Escribir(3.1416*r*r*a)
+	  3:
+	    Leer(r)
+	    Escribir(4/3*3.1416*r*r*r)
+	  4:
+	    Leer(a,r)
+	    Escribir(3.1416*r*r*a/3)
+	Fcaso
+   FIN

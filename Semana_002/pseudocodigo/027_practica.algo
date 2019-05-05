@@ -1,0 +1,53 @@
+Accion calcularMontoFinal
+   DV
+	Real monto,montoFinal,dscto
+	Caracter genero,origen,talla
+
+   INICIO	
+
+	Leer(monto,genero,origen,talla)
+
+	Si genero='H' O genero='h' entonces
+	   Caso talla vale
+	   'S':
+		Si origen='N' O origen='n'
+		   dscto<-0.1
+		Si origen='I' O origen='i'
+		   dscto<-0.05
+	   'M':
+		Si origen='N' O origen='n'
+		   dscto<-0.12
+		Si origen='I' O origen='i'
+		   dscto<-0.07
+	   'l':
+		Si origen='N' O origen='n'
+		   dscto<-0.15
+		Si origen='I' O origen='i'
+		   dscto<-0.1
+	   FCaso
+	FSi
+
+	Si genero='M' O genero='m' entonces
+	   Caso talla vale
+	   'S':
+		Si origen='N' O origen='n'
+		   dscto<-0.15
+		Si origen='I' O origen='i'
+		   dscto<-0.07
+	   'M':
+		Si origen='N' O origen='n'
+		   dscto<-0.17
+		Si origen='I' O origen='i'
+		   dscto<-0.09
+	   'l':
+		Si origen='N' O origen='n'
+		   dscto<-0.2
+		Si origen='I' O origen='i'
+		   dscto<-0.12
+	   FCaso
+	FSi
+
+	montoFinal<-(1-dscto)*monto
+
+	Escribir(monto,dscto*100+"%",montoFinal)
+   FIN

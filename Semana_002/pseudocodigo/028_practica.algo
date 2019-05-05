@@ -1,0 +1,15 @@
+Accion Transaccion
+   DV
+	Entero opcion
+	Real monto,transaccion
+
+   INICIO
+
+	Leer(monto,transaccion,opcion)
+
+	Caso opcion vale
+	  1: Escribir(monto+transaccion)
+	  2: Escribir(monto-transaccion)
+	FCaso
+   FIN
+	

@@ -1,0 +1,24 @@
+Accion numeroMultiplo235
+
+  DV
+	Entero n
+  INICIO
+	Leer(n)
+	
+	Si n mod 2 = 0 entonces
+	   Escribir("El numero es multiplo de 2.")
+	FSi
+	
+	Si n mod 3 = 0 entonces
+	   Escribir("El numero es multiplo de 3.") 
+	FSi
+
+	Si n mod 5 = 0 entonces
+	   Escribir("El numero es multiplo de 5.")
+	FSi
+
+	Si n mod 2 <> 0 y n mod 3 <> 0 y n mod 5 <> 0 entonces
+	   Escribir("El numero no es multiplo de 2,3 ni 5".)
+	FSi
+
+   FIN

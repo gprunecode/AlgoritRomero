@@ -13,6 +13,8 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{slashbox}
+\usepackage{multirow} %tablas
 \usepackage{amssymb}
 \usepackage{graphicx} % Paquete para incluir imágenes en el documento LaTeX
 \usepackage{hyperref}
@@ -998,7 +1000,288 @@ Ingrese seis notas y calcule el promedio, considerando las 5 mejores notas.\\
 {./pseudocode.py:PseudocodeLexer -x}
 {./pseudocodigo/019_practica.algo}
 
+\subsection*{Ejercicio 20}%
+Calcular el pago por ciclo de un alumno de una Universidad, si se ingresan, créditos
+inscritos, categoría, matricula (1: normal, 2: extemporánea). El pago por crédito depende
+de la categoría de acuerdo a la siguiente tabla:\\
 
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+     CATEGORIA & PAGO CRÉDITO \\
+      \hline
+      A & 125.00 \\ \hline
+      B & 150.00 \\ \hline
+      C & 180.00 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+Por matricula extemporánea se paga un recargo de 40.00 soles.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/020_practica.algo}
+
+\subsection*{Ejercicio 21}%
+Cree un menú para determinar el área de las siguientes figuras geométricas: Rectángulo, triangulo, trapecio, circulo, rombo, etc.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/021_practica.algo}
+
+\subsection*{Ejercicio 22}%
+Cree un menú para calcular el volúmen de las siguientes figuras geométricas: Cubo, Cilindro, Esfera, Cono.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/022_practica.algo}
+
+\subsection*{Ejercicio 23}%
+En un hospital se ha hecho un estudio sobre los pacientes registrados durante los últimos 10 años, con el objeto de hacer una aproximación de los costos de internamiento por paciente. Se obtuvo un costo promedio diario según el tipo de enfermedad que aqueja al paciente, además se pudo determinar que en promedio todos los pacientes con edad entre 14 y 22 años implican un costo adicional del 10\%. La siguiente tabla expresa los costos diarios según el tipo de enfermedad.\\
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+     TIPO DE ENFERMEDAD & COSTO/PACIENTE \\
+      \hline
+      0 & 25 \\ \hline
+      1 & 16 \\ \hline
+      2 & 20 \\ \hline
+      3 & 32 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Calcular e imprimir el costo que representa un paciente\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/023_practica.algo}
+
+\subsection*{Ejercicio 24}%
+Una tienda comercial ofrece ventas al crédito financiadas en tres formas como se indica a continuación:\\
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+     N° Letra & Tipo Financ. & Interes(\%) & Cuota inicial(\%) \\
+      \hline \hline
+      2 & 1 & 5 & 60\\ \hline
+      4 & 2 & 10 & 50 \\ \hline
+      6 & 3 & 15 & 35 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+El cliente deberá firmar antes de la financiación el monto de la compra, el cual será afecto a un 10\% de impuesto, por lo que el monto de la factura es igual al monto de la compra más el importe del impuesto. Calcular el monto de cada letra por pagar (nuevo monto de la factura menos el monto de la cuota inicial entre el número de letras).\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/024_practica.algo}
+
+\subsection*{Ejercicio 25}%
+Determinar si un número es múltiplo de 2, de 3, de 5 o de ninguno de ellos. Considere que existen números que pueden ser múltiplos de más de un número. Por ejemplo: si se Ingresa 15 debe mostrarse “El número es múltiplo de 3”, “El número es múltiplo de 5” \\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/025_practica.algo}
+
+\subsection*{Ejercicio 26}%
+Determinar el importe a pagar por un alumno de un instituto cuya cuota tiene un porcentaje de descuento que se establece en la siguiente tabla y esta en función al colegio de procedencia del alumno; asimismo los importes están exonerados de impuestos.\\
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+      \hline
+     & \multicolumn{3}{c|}{Institutos}\\
+      \hline \hline
+      Colegio & A & B & C\\ \hline \hline
+      Nacional & 50 & 40 & 30 \\ \hline
+      Particular & 25 & 29 & 15 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/026_practica.algo}
+
+\subsection*{Ejercicio 27}%
+Una tienda distribuidora de ropa ha establecido porcentajes de descuento sobre el monto comprado de la siguiente forma: \\
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|c|c|c|c|c|c|}
+      \hline
+     & \multicolumn{3}{c|}{Hombres}& \multicolumn{3}{c|}{Mujeres}\\
+      \hline \hline
+      \backslashbox{Origen}{Talla} & S & M & L & S & M & L\\ \hline \hline
+      Nacional & 10 & 12 & 15 & 15 & 17 & 20 \\ \hline
+      Importado & 05 & 07 & 10 & 07 & 09 & 12 \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Determinar y mostrar para un comprador, el monto comprado, el importe del descuento y
+el monto a pagar.
+
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/027_practica.algo}
+
+\subsection*{Ejercicio 28}%
+- Escribir un programa que permita actualizar el saldo de una cuenta del cliente de un
+banco. Los datos de entrada son: numero de cuenta y saldo anterior. El programa además
+debe ingresar el tipo de movimiento que puede ser 1 o 2. Si el tipo de movimiento es 1
+representa un depósito. Si es 2 representa un retiro. En ambos casos se debe pedir el monto
+de la transacción. \\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/028_practica.algo}
+
+\subsection*{Ejercicio 29}%
+Validar el ingreso de una fecha en el formato día, mes, año numéricos determinando si
+es correcta o no, mostrando el mensaje correspondiente. Considerar años bisiestos.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/019_practica.algo}
+
+\subsection*{Ejercicio 30}%
+Ingresar el día, mes y año en el formato numérico (Ejemplo: 2-11-2012), para luego
+mostrarlo en formato con cadena de caracteres (Ejemplo: 2 de Noviembre del 2012).
+\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/019_practica.algo}
 
 
 

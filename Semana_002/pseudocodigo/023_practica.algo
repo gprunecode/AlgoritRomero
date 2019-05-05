@@ -1,0 +1,20 @@
+Accion costoPaciente
+   DV
+	Entero edad,tipoEnf
+	Real costo
+   INICIO
+	Leer(edad,tipoEnf)
+
+	Caso tipoEnf vale
+	  0: costo<-25
+	  1: costo<-16
+	  2: costo<-20
+	  3: costo<-32
+	FCaso
+
+	Si edad>=14 Y edad<=22 entonces
+	   costo<-costo*1.1
+	FSi
+
+	Escribir(costo)
+   FIN

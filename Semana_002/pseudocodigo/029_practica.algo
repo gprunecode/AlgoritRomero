@@ -1,0 +1,102 @@
+Accion DeterminarValidezFecha
+   DV
+	Entero dia,mes,año
+	Logico bisiesto
+   INICIO
+
+	Leer(dia,mes,año)
+
+	Si (año mod 4 = 0 y año mod 100 <> 0) o (año mod 4 = 0 y año mod 400 = 0) entonces
+	   bisiesto<-verdadero
+	Sino
+	   bisiesto<-falso
+	Fsi
+
+	Si mes>0 y mes<=12 entonces
+	   Caso mes vale
+		   1:
+	  	   Si dia<0 o dia>31 entonces
+	 		Escribir("La fecha es incorrecta.")
+	  	   Sino
+			Escribir("La fecha es correcta.")
+	  	   FSi
+	 	  2:
+		     Si bisiesto=verdadero entonces
+		 	Si dia<0 o dia>29 entonces
+			   Escribir("La fecha es incorrecta")
+			Sino
+			   Escribir("La fecha es correcta")
+			FSi
+		     FSi
+
+		     Si bisiesto=falso entonces
+		 	Si dia<0 o dia>28 entonces
+			   Escribir("La fecha es incorrecta")
+			Sino
+			   Escribir("La fecha es correcta")
+			FSi
+		     FSi
+		   3:
+		     Si dia<0 o dia>31 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   4:
+		     Si dia<0 o dia>30 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   5:
+		     Si dia<0 o dia>31 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   6:
+		     Si dia<0 o dia>30 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   7:
+		     Si dia<0 o dia>31 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   8:
+		     Si dia<0 o dia>30 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   9:
+		     Si dia<0 o dia>30 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   10:
+		     Si dia<0 o dia>31 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   11:
+		     Si dia<0 o dia>30 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		   12:
+		     Si dia<0 o dia>31 entonces
+		 	Escribir("La fecha es incorrecta.")
+		     Sino
+			Escribir("La fecha es correcta.")
+		     FSi
+		FCaso
+	FSi
+FIN
+	     

@@ -1,0 +1,29 @@
+Accion menuAreaFiguras
+
+   DV
+	Entero opcion
+	Real b,b2,a,r,d,d2
+
+   INICIO
+	Leer(opcion)
+	
+	Caso opcion vale
+	  1:
+	    Leer(b,a)
+	    Escribir(b*a)
+  	  2:
+	    Leer(b,a)
+	    Escribir(b*a/2)
+	  3:
+	    Leer(b,b2,a)
+	    Escribir(a*(b+b2)/2)
+	  4:
+	    Leer(r)
+	    Escribir(3.1416*r*r)
+	  5:
+	    Leer(d,d2)
+	    Escrbir(d*d2/2)
+	Fcaso
+   FIN
+	
+	

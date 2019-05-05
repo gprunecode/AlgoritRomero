@@ -1,0 +1,17 @@
+Accion montoLetra
+   DV
+	Real monto,letra
+	Entero tipoFin
+   INICIO
+	Leer(monto,tipoFin)
+
+	monto<-monto*1.1
+
+	Caso tipoFin vale
+	  1: letra<-monto*0.4
+	  2: letra<-monto*1.15/4
+	  3: letra<-monto*1.55/6
+	Fcaso
+
+	Escribir(letra)
+   FIN

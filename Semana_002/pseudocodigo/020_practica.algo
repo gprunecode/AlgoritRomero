@@ -1,0 +1,25 @@
+Accion pagoMatricula
+
+   DV
+	Real pagoCred,pagoTotal
+	Entero creditos,matricula
+	Caracter categoria
+   INICIO
+
+	Leer(creditos,categoria,matricula)
+
+	Caso categoria vale
+	'A': pagoCred<-125
+	'B': pagoCred<-150
+	'C': pagoCred<-180
+	FCaso
+
+	pagoTotal<-pagoCred*creditos
+
+	Si matricula = 2 entonces
+	   pagoTotal<-50 + pagoCred*creditos
+	FSi
+
+	Escribir(pagoTotal)
+   FIN
+	

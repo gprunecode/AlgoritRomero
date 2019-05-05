@@ -1,0 +1,39 @@
+Accion importeFinal
+   DV
+	Caracter instituto,colegio
+	Real monto
+   INICIO
+	Leer(monto,instituto,colegio)
+
+	Caso instituto vale
+	
+	'A':
+	     Si colegio = 'N' o colegio = 'n' entonces
+		monto<-monto*0.5 
+	     FSi
+
+	     Si colegio = 'P' o colegio = 'p' entonces
+		monto<-monto*0.75 
+	     FSi
+	'B':
+	     Si colegio = 'N' o colegio = 'n' entonces
+		monto<-monto*0.6 
+	     FSi
+
+	     Si colegio = 'P' o colegio = 'p' entonces
+		monto<-monto*0.71 
+	     FSi
+	'C':
+	     Si colegio = 'N' o colegio = 'n' entonces
+		monto<-monto*0.7 
+	     FSi
+
+	     Si colegio = 'P' o colegio = 'p'
+		monto<-monto*0.85 
+	     FSi
+	FCaso
+
+	Escribir(monto)
+   FIN
+	     
+	      
