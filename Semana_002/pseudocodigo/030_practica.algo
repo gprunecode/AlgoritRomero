@@ -1,21 +1,21 @@
 Accion mostrarFecha
    DV
-	Entero dia,mes,año
+	Entero dia,mes,year
    INICIO
-	Leer(dia,mes,año)
+	Leer(dia,mes,year)
 
 	Caso mes vale
-	  1: Escribir("La fecha es: " + dia + " de enero del "año + ".")
-  	  2: Escribir("La fecha es: " + dia + " de febreo del "año + ".")
-	  3: Escribir("La fecha es: " + dia + " de marzo del "año + ".")
-	  4: Escribir("La fecha es: " + dia + " de abril del "año + ".")
-	  5: Escribir("La fecha es: " + dia + " de mayo del "año + ".")
-	  6: Escribir("La fecha es: " + dia + " de junio del "año + ".")
-	  7: Escribir("La fecha es: " + dia + " de julio del "año + ".")
-	  8: Escribir("La fecha es: " + dia + " de agosto del "año + ".")
-	  9: Escribir("La fecha es: " + dia + " de setiembre del "año + ".")
-	  10: Escribir("La fecha es: " + dia + " de octube del "año + ".")
-	  11: Escribir("La fecha es: " + dia + " de noviembre del "año + ".")
-	  12: Escribir("La fecha es: " + dia + " de diciembre del "año + ".")
+	  1: Escribir("La fecha es: " + dia + " de enero del "year + ".")
+  	  2: Escribir("La fecha es: " + dia + " de febreo del "year + ".")
+	  3: Escribir("La fecha es: " + dia + " de marzo del "year + ".")
+	  4: Escribir("La fecha es: " + dia + " de abril del "year + ".")
+	  5: Escribir("La fecha es: " + dia + " de mayo del "year + ".")
+	  6: Escribir("La fecha es: " + dia + " de junio del "year + ".")
+	  7: Escribir("La fecha es: " + dia + " de julio del "year + ".")
+	  8: Escribir("La fecha es: " + dia + " de agosto del "year + ".")
+	  9: Escribir("La fecha es: " + dia + " de setiembre del "year + ".")
+	  10: Escribir("La fecha es: " + dia + " de octube del "year + ".")
+	  11: Escribir("La fecha es: " + dia + " de noviembre del "year + ".")
+	  12: Escribir("La fecha es: " + dia + " de diciembre del "year + ".")
 	FCaso
    FIN

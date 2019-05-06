@@ -1,12 +1,12 @@
 Accion DeterminarValidezFecha
    DV
-	Entero dia,mes,año
+	Entero dia,mes,year
 	Logico bisiesto
    INICIO
 
-	Leer(dia,mes,año)
+	Leer(dia,mes,year)
 
-	Si (año mod 4 = 0 y año mod 100 <> 0) o (año mod 4 = 0 y año mod 400 = 0) entonces
+	Si (year mod 4 = 0 y year mod 100 <> 0) o (year mod 4 = 0 y year mod 400 = 0) entonces
 	   bisiesto<-verdadero
 	Sino
 	   bisiesto<-falso
