@@ -3,7 +3,7 @@ D.V.
   Entero dd1, dd2, mm1, mm2, yy1, yy2, AP1, AP2, MP1, MP2, DJ1, DJ2, dias
 Inicio
   Leer(dd1, mm1, yy1, dd2, mm2, yy2)
-  Si mes > 2 entonces
+  Si mm1 > 2 entonces
     AP1 <- yy1
     MP1 <- mm1 + 1
   Sino
@@ -12,7 +12,7 @@ Inicio
   FSi
   DJ1 <- Entero(365.25*AP1) + Entero(30.6001*MP1) + dd1 + 1720982
 
-  Si mes > 2 entonces
+  Si mm2 > 2 entonces
     AP2 <- yy2
     MP2 <- mm2 + 1
   Sino

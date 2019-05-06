@@ -1,19 +1,19 @@
 Accion bisiesto
 D.V.
-  Entero yr
+  Entero yy
 Inicio
-  leer(yr)
-  Si yr mod 4 = 0 entonces
-    Si yr mod 100 = 0 entonces
-      Si yr mod 400 = 0 entonces
-        Escribir(yr, " es bisiesto")
+  leer(yy)
+  Si yy mod 4 = 0 entonces
+    Si yy mod 100 = 0 entonces
+      Si yy mod 400 = 0 entonces
+        Escribir(yy, " es bisiesto")
       Sino
-        Escribir(yr, "no es bisiesto")
+        Escribir(yy, "no es bisiesto")
       FSi
     Sino
-      Escribir(yr, " es bisiesto")
+      Escribir(yy, " es bisiesto")
     FSi
   Sino
-    Escribir(yr, " no es bisiesto")
+    Escribir(yy, " no es bisiesto")
   FSi
 Fin

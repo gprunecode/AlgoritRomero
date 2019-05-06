@@ -1,5 +1,5 @@
 Accion EcuacionCuadratica
-DV
+D.V.
   Real a,b,c   // Entrada
   Real x1,x2   // Salida
   Real disc

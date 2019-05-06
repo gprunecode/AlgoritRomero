@@ -1,5 +1,5 @@
 Accion Ingresos
-DV
+D.V.
   entero dia      // entrada
   cadena nombre   // salida
 Inicio

@@ -1,5 +1,5 @@
 Accion Ingresos
-DV
+D.V.
   real consumo      // entrada
   real importe      // salida
 Inicio

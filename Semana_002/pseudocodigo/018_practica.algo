@@ -1,6 +1,6 @@
 Accion DescuentoCompra
 D.V.
-  Real descuento, compra
+  Real descuento, compra, PagoTotal
   Entero color
 Inicio
   Leer(compra, color)

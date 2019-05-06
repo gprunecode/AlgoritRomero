@@ -17,7 +17,7 @@ int main(void)
   p = pow(m,2) + 1;
   q = -(2*a + 2*m*(b-c));
   s = pow((b-c),2) - pow(r,2) + pow(a,2);
-  disc = pow(p, 2) - 4*q*s;
+  disc = pow(q, 2) - 4*p*s;
 
   if (disc < 0) {
     cout << "La recta no intersecta con la circunferencia" << endl;
