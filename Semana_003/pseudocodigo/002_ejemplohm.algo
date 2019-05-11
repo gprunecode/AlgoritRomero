@@ -1,0 +1,14 @@
+Accion Notas
+D.V.
+  Entero n, parcial, final, pract, numAlu    // Entrada
+  Real prom                                  // Salida
+Inicio
+  Leer(n)
+  numAlu <- 1
+  Hacer
+    Leer(parcial, final, pract)
+    prom <- (parcial + final + pract)/3
+    Escribir(prom)
+    numAlu <- numAlu + 1
+  Mientras numAlu <= n
+Fin

@@ -1,0 +1,11 @@
+Accion multiplicacion
+D.V.
+  Entero num1, num2, mult
+Inicio
+  Leer(num1, num2)
+  mult <- 0
+  Para i desde 1 a num2 hacer
+    mult <- mult + num1
+  FMientras
+  Escribir(mult)
+Fin

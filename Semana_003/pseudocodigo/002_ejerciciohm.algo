@@ -1,0 +1,19 @@
+Accion Poblaciones
+D.V.
+  Entero poblacionA, poblacionB, anoactual
+  Real crecimientoA, crecimientoB
+Inicio
+  poblacionA <- 52
+  poblacionB <- 85
+  crecimientoA <- 0.06
+  crecimientoB <- 0.04
+  anoactual <- 2019
+
+  Hacer
+    poblacionA <- poblacionA + Entero(poblacionA*crecimientoA)
+    poblacionB <- poblacionB + Entero(poblacionB*crecimientoB)
+    anoactual <- anoactual + 1
+  Mientras poblacionA <= poblacionB
+  anoactual <- anoactual - 1
+  Escribir(poblacionA, poblacionB, anoactual)
+Fin

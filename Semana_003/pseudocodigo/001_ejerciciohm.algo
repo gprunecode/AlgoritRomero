@@ -1,0 +1,20 @@
+Accion sueldoTrabajadores
+D.V.
+  Entero n, i, cont
+  Real sueldo, PagoEmpresa
+Inicio
+  Leer(n)
+  i <- 1
+  cont <- 0
+  PagoEmpresa <- 0
+
+  Hacer
+    Leer(sueldo)
+    Si sueldo > 5000 entonces
+      cont <- cont + 1
+    FSi
+    PagoEmpresa <- PagoEmpresa + sueldo
+    i <- i + 1
+  Mientras i <= n
+  Escribir(PagoEmpresa, cont)
+Fin

@@ -1,0 +1,590 @@
+%%
+%% (
+%%  )\ )                             (
+%%  (()/(   (            (             )\  )   (
+%%   /(_))  ))\   (       ))\  (   (   (()/(   ))\
+%%   (_))  /((_)  )\  )  /((_) )\  )\   ((_))/((_)
+%%   | _ \(_))(  _(_/( (_) )  ((_)((_)  _| |(_))
+%%   |   /| || || ' \))/ -_)/ _|/ _ \/ _` |/ -_)
+%%   |_|_\ \_,_||_||_| \___|\__|\___/\__,_|\___|
+%%
+
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+%\usepackage{slashbox}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} % Paquete para incluir imágenes en el documento LaTeX
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{varwidth}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{multirow}
+
+\usepackage[a4paper,rmargin=1.5cm,lmargin=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+
+\usepackage{pdfpages}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usemintedstyle[cpp]{monokai}
+\usemintedstyle[python]{paraiso-dark}
+\usemintedstyle[./pseudocode.py:PseudocodeLexer -x]{rainbow_dash}
+\definecolor{LightGray}{gray}{0.98}
+\definecolor{DarkGray}{gray}{0.1}
+\definecolor{MidGray}{gray}{0.8}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\setlength{\parindent}{0px}  % Setea la indentacion de la primera linea de cada parrafo a cero pixeles.
+
+
+\title{Resolución de la primera semana}
+\author{@RuneCode}
+
+\begin{document}
+%% Portada
+\includepdf{./portada/portada.pdf}
+
+
+%% ####################################################################################
+%%    Inicio del Documento
+%% ####################################################################################
+\section*{Tercera Semana}%
+En esta clase se revisaron los temas de:
+\begin{itemize}
+\item \textbf{Iteraciones}
+\item \textbf{Mientras hacer}
+\item \textbf{Contador y acumulador}
+\item \textbf{Hacer Mientras}
+\item \textbf{Para hacer}
+\end{itemize}
+\vspace{1cm}
+\textbf{Nota:} Te recomendamos realizar los ejercicios antes de ver su solución
+ya que el objetivo de este documento es presentarte una de las muchas posibles
+soluciones y así tengas una modelo con el que puedas comparar. Si tienes alguna
+sugerencia de mejora puedes comunicarte por correo a la dirección
+\href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+
+%% ####################################################################################
+%%    Iteraciones o Repetitivas
+%% ####################################################################################
+\section*{Iteraciones o Repetitivas}%
+Existen soluciones en las que es necesario repetir el mismo conjunto de
+aciones, repetidas veces.\\
+Lo anterior sólo es posible si reescribimos las acciones cuantas veces sea
+necesario que se ejecuten, lo que puede ser una tarea bastante tediosa.\\
+Presentaremos un conjunto de acciones conocidas con el nombre de Iterativas,
+cuya finalidad es permitir que un determinado conjunto de acciones se repitan
+un número requerido de veces.
+
+\section{Iteraciones: Mientras}%
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_mientras.algo}
+
+En esta estructura de control repetitiva, se evalúa la expresion booleana, si
+es verdadera se ejecuta la secuencia de acciones.\\
+Mientras la expresion booleana sea verdadera seguirá ejecutándose la secuencia
+de acciones.\\
+Cuando la expresión booleana se haga falsa se finalizará la iteración.\\
+
+\subsection*{Ejemplo 1}%
+Escriba el pseudocódigo para hallar la suma de los n primeros términos de la siguiente serie:\\
+\begin{equation*}
+  1 + 2 + 3 + 4 + 5 + \cdots
+\end{equation*}
+
+\vspace{0.7cm}
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_ejemplomh.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/001_ejemplomh.cpp}
+
+
+\section{Contador y Acumulador}%
+Un contador es un elemento que usamos con las estructuras repetitivas y que se
+incrementa en un valor fijo en cada iteración.\\
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/contador.algo}
+
+Un acumulador a diferencia del contador se incrementa en un valor diferente en
+cada iteración. El resultado que se obtiene es la suma total de todos los
+valores.
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/acumulador.algo}
+\newpage
+
+\subsection*{Ejercicio 1}%
+Calcule el valor de la siguiente serie para N términos:\\
+\begin{equation*}
+  \dfrac{1}{2} + \dfrac{2}{3} + \dfrac{3}{4} + \cdots
+\end{equation*}
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_ejercicio.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/001_ejerciciomh.cpp}
+\newpage
+
+\subsection*{Ejemplo 2}%
+Escribir el pseudocódigo para hallar el promedio de un alumno que tiene n notas.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_ejemplomh.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejemplomh.cpp}
+
+
+\section{Iteraciones: Hacer ... Mientras}%
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_hacermientras.algo}
+
+La secuencia de n acciones se ejecuta y luego se evalúa la ExpresiónBooleana,
+si es verdadera, nuevamente ejecutará la secuencia de n acciones.\\
+Esto continuará mientras que la ExpresiónBooleana sea verdadera.\\
+Cuando la ExpresiónBooleana se haga falsa, finalizará la ejecución de la
+estructura repetitiva.\\
+
+\subsection*{Ejemplo 2}%
+Hallar el promedio de cada uno de n alumnos.\\
+Considera que cada alumno tiene 3 notas: examen parcial, examen final y práctica.
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_ejemplohm.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejemplohm.cpp}
+
+\subsection*{Problema}%
+En una organización hay n trabajadores. Cada trabajador tiene un sueldo. Se pide hallar:\\
+\begin{enumerate}
+  \item ¿Cuánto paga en total la organización a sus trabajadores?
+  \item ¿Cuántos trabajadores ganan más de 5000 soles?
+\end{enumerate}
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/001_ejerciciohm.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejerciciohm.cpp}
+
+
+\subsection*{Ejercicio 2}%
+Suponga que actualmente las poblaciones de los países A y B son 52 y 85
+millones de habitantes respectivamente. Supongamos que las tasas de crecimiento
+de población son 6\% y 4\% respectivamente. Determine en qué año la población A
+excede a la población B.\\
+Resuelva el problema considerando que todos los valores son datos. Realice las
+verificaciones necesarias.
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/002_ejerciciohm.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/002_ejerciciohm2.cpp}
+
+
+\section{Iteraciones: Para}%
+
+%Pseudocódigo
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003_para.algo}
+
+La \textbf{Variable} se inicializa con valor \textit{Inicial} y si ésta es
+menor o igual a \textit{valor Final} entonces ejecuta la secuencia de n
+acciones.\\
+Luego de ejecutar las acciones la \textbf{Variable} se incrementa en valor
+\textit{valor Incremento} y vuelve a compararse con \textit{valor Final}.\\
+Cuando la \textbf{Variable} excede el \textit{valor Final}, se finalizan las
+iteraciones.
+\vspace{1cm}
+
+\subsection*{Ejemplo 3}%
+Calcular la suma de n términos de la serie.
+\begin{equation*}
+  1 + 2 + 3 + 3 + 4 + 5 + \cdots + n
+\end{equation*}
+\newpage
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003_ejemplop.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/003_ejemplop.cpp}
+
+
+\subsection*{Ejemplo 4}%
+Hallar el producto de los n primeros números naturales.\\
+\begin{equation*}
+  1 * 2 * 3 * 4 * \cdots
+\end{equation*}
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/004_ejemplop.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/004_ejemplop.cpp}
+
+
+\subsection*{Ejercicios}%
+Escriba un pseudocódigo que permita multiplicar dos números entereos positivos
+usando solamente la operación suma.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/003_ejerciciop.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/005_ejemplo.cpp}
+
+
+\subsection*{Ejercicios}%
+Determinar la cantidad de dígitos que tiene un número entero y además mostrar
+la suma de los dígitos pares y de los impares. Considere el cero como número
+par.\\
+
+%Pseudocódigo
+\underline{\textit{Resolución en pseudocódigo}}\\ 
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=LightGray,
+  %linenos
+]
+{./pseudocode.py:PseudocodeLexer -x}
+{./pseudocodigo/004_ejerciciop.algo}
+
+%C++
+\underline{\textit{Resolución en C++}}\\
+\inputminted
+[
+  frame=lines,
+  framesep=2mm,
+  baselinestretch=1.2,
+  rulecolor=\color{black!30},
+  %fontsize=\footnotesize,
+  bgcolor=DarkGray,
+  %linenos
+]
+{cpp}
+{./cpp/006_ejemplo.cpp}
+
+\section*{Agradecimientos}
+\textbf{Personas que apoyaron mandando psudocódigo y código en este documento:}\\
+
+%---------------------------------------------------------------------------------
+\vspace{3cm} 
+\section*{¡Envianos tus soluciones!}
+Si estás llevando este curso con los profesores Cabrera, Romero o Salinas;
+envíanos tus soluciones en los diferentes lenguajes de programación que
+conozcas al correo \href{mailto:gprunecode@gmail.com}{gprunecode@gmail.com}.
+n.n \\ 
+
+Las mejores soluciones tanto en el algoritmo como en el código, serán
+publicadas en las siguientes ediciones de estos documentos.\\ \\
+
+El asunto del correo debe estar de la siguiente manera:\\
+$NumeroDeSesion-Profesor-NumeroDeEjercicio$ \\ \\
+Por ejemplo:  \\
+$01-Romero-01$ \\
+
+Y dentro del correo adjuntar tu solución y nombre como quieras ser reconocido en caso de ser electo.
+
+\vspace{2cm}
+\LARGE\textit{RuneCode}
+
+
+\end{document}
+

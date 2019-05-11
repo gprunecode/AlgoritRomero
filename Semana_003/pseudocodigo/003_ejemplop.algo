@@ -1,0 +1,12 @@
+Accion Serie
+D.V.
+  Entero n      // Entrada
+  Entero suma   // Salida
+Inicio
+  Leer(n)
+  suma <- 0
+  Para i desde 1 a n hacer
+    suma <- suma + i
+  FPara
+  Escribir(suma)
+Fin

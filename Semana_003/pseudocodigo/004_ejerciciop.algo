@@ -1,0 +1,25 @@
+Accion digitos
+D.V.
+  Entero num, numeroDigitos, SumaPar, SumaImpar, digito
+Inicio
+  Leer(num)
+  SumaPar <- 0
+  SumaImpar <- 0
+  numeroDigitos <- 0
+  Mientras num <> 0 hacer
+    Si Entero(num/10) = 0 entonces
+      digito <- num
+    Sino
+      digito <- num mod 10
+    FSi
+
+    Si digito mod 2 = 0 entonces
+      SumaPar <- SumaPar + digito
+    Sino
+      SumaImpar <- SumaImpar + digito
+    FSi
+    num <- Entero(num/10)
+    numeroDigitos <- numeroDigitos + 1
+  FMientras
+  Escribir(numeroDigitos, SumaPar, SumaImpar)
+Fin

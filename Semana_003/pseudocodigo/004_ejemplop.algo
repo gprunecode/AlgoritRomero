@@ -1,0 +1,12 @@
+Accion Serie
+D.V.
+  Entero n      // Entrada
+  Entero prod   // Salida
+Inicio
+  Leer(n)
+  prod <- 1
+  Para i desde 1 a n hacer
+    prod <- prod*i
+  FPara
+  Escribir(prod)
+Fin

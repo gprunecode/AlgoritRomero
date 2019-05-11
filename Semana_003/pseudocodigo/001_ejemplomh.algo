@@ -1,0 +1,16 @@
+Accion Serie
+D.V.
+  Entero n      // Entrada
+  Entero suma   // Salida
+  Entero i
+Inicio
+  Leer(n)
+  suma <- 0
+  i <- 1
+
+  Mientras i <= n Hacer
+    suma <- suma + i
+    i <- i + 1
+  fmientras
+  Escribir(suma)
+Fin
