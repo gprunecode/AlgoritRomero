@@ -1,0 +1,18 @@
+Entero Accion cuadrado(Entero)    // Prototipo
+
+Accion Principal
+D.V.
+  Entero k, cuad    // Variables locales a Principal
+Inicio
+  Leer(k)
+  cuad <- cuadrado(k)   // k es parametro real
+  Escribir("Cuadrado", cuad)
+Fin
+
+Entero Accion cuadrado(Entero n)    // n es parametro formal
+D.V.
+  Entero c    // Variable local a cuadrado
+Inicio
+  c <- n*n
+  retornar c
+FAccion

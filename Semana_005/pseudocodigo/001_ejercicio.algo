@@ -1,0 +1,33 @@
+Entero Accion factorial(entero n)   // Prototipo
+Real Accion sumatoriaInversa(entero n)    // Prototipo
+
+Accion Principal
+D.V.
+  Real suma
+  Entero n
+Inicio
+  Leer(n)
+  Suma = sumatoriaInversa(n)
+  Escribir(suma)
+Fin
+
+Entero Accion factorial(entero n)
+D.V.
+  Entero i, fact <- 1
+Inicio
+  Para i desde 1 a n hacer
+    fact <- fact*i
+  FPara
+  retornar fact
+FAccion
+
+Real Accion sumatoriaInversa(entero n)
+D.V.
+  Real sumatoria
+Inicio
+  Para i desde 1 a n hacer
+    sumatoria <- sumatoria + 1.0/factorial(i)
+  FPara
+  retornar sumatoria
+FAccion
+

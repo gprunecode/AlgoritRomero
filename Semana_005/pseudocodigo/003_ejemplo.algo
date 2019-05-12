@@ -1,0 +1,9 @@
+Entero Accion factorial(Entero num)
+D.V.
+  Entero i, factor <- 1
+Inicio
+  Para i de 1 a num hacer
+    factor <- factor*i
+  FPara
+  retornar factor
+FAccion

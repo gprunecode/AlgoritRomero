@@ -1,0 +1,13 @@
+// Declaracion o prototipo
+  Accion identificador (lista de parametros)
+
+// Definicion
+  Accion identificador (lista de parametros)
+  D.V.
+    // Variables locales
+  Inicio
+    Sentencias
+  FAccion
+
+// Llamada o Invocacion
+  identificador(lista de parametros)

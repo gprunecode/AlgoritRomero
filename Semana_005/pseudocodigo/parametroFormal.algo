@@ -1,0 +1,7 @@
+Entero Accion cuadrado(Entero n)
+D.V.
+  Entero k    // Variable local a cuadrado
+Inicio
+  k <- n*n
+  retornar k
+FAccion

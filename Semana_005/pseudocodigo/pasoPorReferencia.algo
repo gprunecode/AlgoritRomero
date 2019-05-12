@@ -1,0 +1,16 @@
+Accion division(entero, entero, entero&, entero&)   // Prototipo
+
+Accion Principal
+D.V.
+  Entero num1, num2, coc, res
+Inicio
+  Leer(num1, num2)
+  division(num1, num2, coc, res)
+  Escribir(coc, res)
+Fin
+
+Accion division(entero n1, entero n2, entero &c, entero &r)
+Inicio
+  c <- n1 div n2
+  r <- n1 mod n2
+FAccion

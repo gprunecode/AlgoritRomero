@@ -1,0 +1,17 @@
+Entero Accion cuadrado(Entero)    // Prototipo
+
+Accion Principal
+D.V.
+  Entero k    // Variable local a Principal
+Inicio
+  k <- 3
+  Escribir("Cuadrado", cuadrado(k))
+Fin
+
+Entero Accion cuadrado(Entero n)
+D.V.
+  Entero k    // Variable local a cuadrado
+Inicio
+  k <- n*n
+  retornar k
+FAccion

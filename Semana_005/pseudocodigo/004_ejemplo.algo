@@ -1,0 +1,27 @@
+// Prototipo
+Real Accion discri(real, real, real)
+Accion cuadratica(real, real, real, real&, real&)
+
+Accion principal
+D.V.
+  Real coef1, coef2, coef3
+  Real r1, r2
+Inicio
+  Leer(coef1, coef2, coef3)
+  cuadratica(coef1, coef2, coef3, r1, r2)   // Llamada a procedimiento
+  Escribir(r1, r2)
+Fin
+
+Real Accion discri(real a, real b, real c)
+D.V.
+  Real d
+Inicio
+  d <- (b*b-4*a*c)
+  retornar d
+FAccion
+
+Accion cuadratica(real a, real b, real c, real &raiz, real &raiz2)
+Inicio
+  raiz1 <- (-b + discri(a, b, c)**0.5)/(2*a)
+  raiz2 <- (-b - discri(a, b, c)**0.5)/(2*a)
+FAccion

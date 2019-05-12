@@ -1,0 +1,14 @@
+// Declaracion o prototipo
+  tipo Accion identificador (lista de parametros)
+
+// Definicion
+  tipo Accion identificador (lista de parametros)
+  D.V.
+    // variables locales
+  Inicio
+    sentencias
+    retornar resultado
+  FAccion
+
+// Llamada o Invocacion
+  identificador (lista de parametros)     // Obs: retorna resultado

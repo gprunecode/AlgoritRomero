@@ -1,0 +1,8 @@
+Accion Principal
+D.V.
+  Entero num1, num2, coc, res
+Inicio
+  Leer(num1, num2)
+  division(num1, num2, coc, res)    // Llamada a procedimiento
+  Escribir(coc, res)
+Fin
