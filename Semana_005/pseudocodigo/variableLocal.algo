@@ -1,4 +1,4 @@
-Entero Accion cuadrado(Entero)    // Prototipo
+Entero Accion cuadrado(Entero n)    // Prototipo
 
 Accion Principal
 D.V.

@@ -1,5 +1,5 @@
-Real Accion discri(real, real, real)
-Accion cuadratica(real, real, real, real&, real&)
+Real Accion discri(real a, real b, real c)
+Accion cuadratica(real a, real b, real c, real &raiz1, real &raiz2)
 
 Accion Principal
 D.V.

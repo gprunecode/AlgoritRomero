@@ -1,4 +1,4 @@
-Accion division(entero, entero, entero&, entero&)   // Prototipo
+Accion division(entero n1, entero n2, entero &c, entero &r)   // Prototipo
 
 Accion Principal
 D.V.
