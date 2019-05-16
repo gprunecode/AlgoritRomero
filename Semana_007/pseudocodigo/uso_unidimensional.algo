@@ -1,0 +1,8 @@
+// Se declara:
+Entero lista[20]
+
+// Se usa:
+Leer(lista[3])
+lista[i] <- 20
+valor <- lista[3]
+Escribir(lista[3])

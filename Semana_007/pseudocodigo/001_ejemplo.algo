@@ -1,0 +1,46 @@
+Accion llenarV(Entero notas[], Entero n)
+Entero Accion contarAprob(Entero notas[], Entero n)
+Accion mostrarV(Entero notas[], Entero n)
+
+Accion Principal
+D.V.
+  Entero n, notas[20]   // Entrada
+  Entero cont           // Salida
+Inicio
+  Leer(n)
+  llenarV(notas, n)
+  cont <- contarAprob(notas, n)
+  mostrarV(notas, n)
+  Escribir(cont)
+Fin
+
+Accion llenarV(Entero notas[], Entero n)
+D.V.
+  Entero i
+Inicio
+  Para i de 1 a n hacer
+    Leer(notas[i])
+  FPara
+FAccion
+
+Accion mostrarV(Entero notas[], Entero n)
+D.V.
+  Entero i
+Inicio
+  Para i de 1 a n hacer
+    Escribir(notas[i])
+  FPara
+FAccion
+
+// Hallar cuantos aprobados
+Entero Accion contarAprob(Entero notas[], Entero n)
+D.V.
+  Entero i, cont <- 0
+Inicio
+  Para i de 1 a n hacer
+    Si notas[i] >= 11 entonces
+      cont <- cont + 1
+    FSi
+  FPara
+  retornar cont
+FAccion

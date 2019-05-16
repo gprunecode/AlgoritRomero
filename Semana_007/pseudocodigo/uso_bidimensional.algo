@@ -1,0 +1,8 @@
+// Se declara:
+Entero notas[25,4]
+
+// Se usa:
+Escribir(nota[5,3])
+notas[i,j] <- 19
+parcial <- notas[2,5]
+Leer(notas[i,j])

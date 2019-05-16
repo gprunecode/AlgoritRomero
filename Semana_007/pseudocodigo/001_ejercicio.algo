@@ -1,0 +1,48 @@
+Accion llenarV(Entero num[], Entero cant)
+Accion contarValores(Entero num[], Entero cant, Entero &neg, Entero &pos, Entero &ceros)
+Accion mostrarResultado(Entero neg, Entero pos, Entero ceros)
+
+Accion principal
+D.V.
+  Entero num[40]
+  Entero cant, neg, pos, ceros
+Inicio
+  Leer(cant)
+  llenarV(num, cant)
+  contarValores(num, cant, neg, pos, ceros)
+  mostrarResultado(neg, pos, ceros)
+Fin
+
+Accion llenarV(Entero num[], Entero cant)
+D.V.
+  Entero i
+Inicio
+  Para i desde 1 a cant hacer
+    Leer(num[i])
+  FPara
+Fin
+
+Accion contarValores(Entero num[], Entero cant, Entero &neg, Entero &pos, Entero &ceros)
+D.V.
+
+Inicio
+  neg <- 0
+  pos <- 0
+  ceros <- 0
+  Para i desde 1 a cant hacer
+    Si num[i] < 0 entonces
+      neg <- neg + 1
+    Sino
+      Si num[i] > 0 entonces
+        pos <- pos + 1
+      Sino
+        ceros <- ceros + 1
+      FSi
+    FSi
+  FPara
+Fin
+
+Accion mostrarResultado(Entero neg, Entero pos, Entero ceros)
+Inicio
+  Escribir(neg, pos, ceros)
+Fin
