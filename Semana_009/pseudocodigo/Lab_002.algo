@@ -1,0 +1,62 @@
+//Prototipo
+Accion llenarM(Entero nume, Entero f, Entero c)
+Accion contar(Entero nume, Entero f, Entero c, Entero &p, Entero &n, Entero &ce)
+Accion mostrarM(Entero nume, Entero f, Entero c)
+
+Accion Principal
+D.V.
+  Entero m <- 20, n <- 20
+  Entero fil, col, num[m,n] //E
+  Entero pos, neg, cero //S
+Inicio
+  Leer(fil, col)
+  llenarM(num, fil, col)
+  contar(num, fil, col, pos, neg, cero)
+  mostrarM(num, fil, col)
+  escribir(pos, neg, cero)
+Fin
+
+Accion llenarM(Entero nume[ ][20], Entero f, Entero c)
+D.V.
+  Entero i, j
+Inicio
+  Para i de 1 a f hacer
+    Para j de 1 a c hacer
+      leer(nume[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion mostrarM(Entero nume[ ][20], Entero f,Entero c)
+D.V.
+  Entero i, j
+Inicio
+  Para i de 1 a f hacer
+    Para j de 1 a c hacer
+      escribir(nume[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion contar(Entero nume[ ][20], Entero f, Entero c, Entero &p,Entero &n, Entero &ce)
+D.V.
+  Entero i, j
+Inicio
+  p <- 0
+  n <- 0
+  ce <- 0
+
+  para i de 1 a f hacer
+    para j de 1 a c hacer
+      Si nume[ i,j ] > 0 entonces
+        p <- p+1
+      sino
+        Si nume[ i,j ] < 0 entonces
+          n <- n+1
+        sino
+          ce <- ce+1
+        fsi
+      fsi
+    fpara
+  fpara
+FAccion

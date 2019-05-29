@@ -1,0 +1,83 @@
+//Prototipo
+Accion llenarM(Entero mat[][10], Entero f, Entero c)
+Accion mostrarM(Entero mat[][10], Entero f, Entero c)
+Accion sumaV(Entero mat[][10], Entero vec[], Entero f, Entero c)
+Accion sumaH(Entero mat[][10], Entero vec[], Entero f, Entero c)
+Entero Accion sumaT(Entero mat[][10], Entero f, Entero c)
+Accion mostrarV(Entero vec[], Entero n)
+
+Accion principal
+D.V.
+  Entero matriz[10,10]               //Entrada
+  Entero almacenes[10], productos[10]//Salida
+  Entero suma                        //Salida  
+  Entero fil, col
+Inicio
+  Leer(fil, col)
+
+  llenarM(m1, fil, col)
+  sumaV(matriz, productos, fil, col)
+  sumaH(matriz, almacenes, fil, col)
+  suma <- sumaT(matriz, fil, col)
+
+  mostrarM(matriz, fil, col)
+  mostrarV(productos, col)
+  mostrarV(almacenes, fil)
+  Escribir(suma)
+Fin
+
+Accion llenarM(Entero mat[][10], Entero f, Entero c)
+  Entero i,j
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Leer(mat[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion mostrarM(Entero mat[][10], Entero f, Entero c)
+  Entero i,j
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Escribir(mat[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion sumaV(Entero mat[][10], Entero vec[], Entero f, Entero c)
+  Entero i,j
+  Para j desde 1 hasta c hacer
+    vec[j] <- 0
+    Para i desde 1 hasta f hacer 
+      vec[j] <- vec[j] + mat[i,j]
+    fPara
+  fPara
+FAccion
+
+
+Accion sumaH(Entero mat[][10], Entero vec[], Entero f, Entero c)
+  Entero i,j
+  Para i desde 1 hasta f hacer
+    vec[i] <- 0
+    Para j desde 1 hasta c hacer 
+      vec[i] <- vec[i] + mat[i,j]
+    fPara
+  fPara
+FAccion
+
+Entero Accion sumaT(Entero mat[][10], Entero f, Entero c)
+  Entero suma <- 0
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      suma <- suma + mat[i,j]
+    fPara
+  fPara  
+  retornar suma
+FAccion
+
+Accion mostrarV(Entero vec[], Entero n)
+  Entero i
+  Para i desdde 1 hasta n hacer
+    Escrbir(vec[i])
+  fPara
+FAccion

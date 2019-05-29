@@ -1,0 +1,32 @@
+Accion imprimirPrimos(Entero n1, Entero n2)   // Prototipo
+
+Accion principal
+D.V.
+  Entero num1, num2
+Inicio
+  Leer(num1, num2)
+  Si num1 > num2 entonces
+    imprimirPrimos(num2, num1)
+  Sino
+    imprimirPrimos(num1, num2)
+  FSi
+Fin
+
+Accion imprimirPrimos(Entero n1, Entero n2)
+D.V.
+  Entero i, j, primo
+Inicio
+  Para i desde n1 a n2-1 hacer
+    Primo <- 1
+    Para j desde 2 a i-1 hacer
+      Si i mod j=0 entonces
+        primo <- 0
+        j <- i
+      FSi
+    FPara
+  FPara
+  Si primo <> 0 entonces
+    Escribir(i)
+  FSi
+FAccion
+

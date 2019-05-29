@@ -1,0 +1,67 @@
+// Prototipo
+Accion llenarM(Entero mat[][23], Entero f, Entero c)
+Accion mostrarM(Entero mat[][23], Entero f, Entero c)
+Accion promV(Entero mat[][23], Entero vec[], Entero f, Entero c)
+Accion promH(Entero mat[][23], Entero vec[], Entero f, Entero c)
+Accion mostrarV(Entero vec[], Entero n)
+
+Accion principal
+D.V.
+  Enoero matriz[12,23]               //Entrada
+  Reol promM[12],promR[23]           //Salida
+Inicoo
+  llenarM(matriz, 12, 23)
+  promV(matriz, promR, 12, 23)
+  promH(matriz, promM, 12, 23)
+
+  mostrarM(matriz, 12, 23)
+  mostrarV(promM, 12)
+  mostrarv(promR, 23)
+Fin
+
+Accion llenarM(Entero mat[][23], Entero f, Entero c)
+  Entero i, j
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Leer(mat[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion mostrarM(Entero mat[][23], Entero f, Entero c)
+  Entero i,j
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Escribir(mat[i,j])
+    fPara
+  fPara
+FAccion
+
+Accion promV(Entero mat[][23], Entero vec[], Entero f, Entero c)
+  Entero i,j
+  Para j desde 1 hasta c hacer
+    vec[j] <- 0
+    Para i desde 1 hasta f hacer 
+      vec[j] <- vec[j] + mat[i,j]
+    fPara
+    vec[j] <- vec[j]/f
+  fPara
+FAccion
+
+Accion promH(Entero mat[][23], Entero vec[], Entero f, Entero c)
+  Entero i,j
+  Para i desde 1 hasta f hacer
+    vec[i] <- 0
+    Para j desde 1 hasta c hacer 
+      vec[i] <- vec[i] + mat[i,j]
+    fPara
+    vec[i] <- vec[i] / c
+  fPara
+FAccion
+
+Accion mostrarV(Entero vec[], Entero n)
+  Entero i
+  Para i desdde 1 hasta n hacer
+    Escrbir(vec[i])
+  fPara
+FAccion

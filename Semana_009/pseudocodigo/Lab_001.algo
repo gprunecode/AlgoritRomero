@@ -1,0 +1,51 @@
+//Prototipo
+Accion llenarM(Entero mat[][10], Entero f, Entero c)
+Accion mostrarM(Entero mat[][10], Entero f, Entero c)
+Accion sumar(Entero mat[][10], Entero mat2[][10], Entero mat3[][10], Entero f, Entero c)
+
+Accion principal
+D.V.
+  Entero m1[10,10], m2[10,10], ms[10,10]  //matrices 1, 2 y matriz suma
+  Entero fil, col//
+Inicio
+  Leer(fil, col)
+  llenarM(m1, fil, col)
+  llenarM(m2, fil, col)
+  sumar(m1, m2, ms, fil, col)
+  mostrarM(m1, fil, col)
+  mostrarM(m2, fil, col)
+FIN
+
+Accion llenarM(Entero mat[][10], Entero f, Entero c)
+D.V.
+  Entero i,j
+Inicio
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Leer(mat[i,j])
+    FPara
+  FPara
+FAccion
+
+Accion mostrarM(Entero mat[][10], Entero f, Entero c)
+D.V.
+  Entero i,j
+Inicio
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      Escribir(mat[i,j])
+    FPara
+  FPara
+FAccion
+
+Accion sumar(Entero mat[][10], Entero mat2[][10], Entero mat3[][10], Entero f, Entero c)
+D.V.
+  Entero i, j
+Inicio
+  Para i desde 1 hasta f hacer
+    Para j desde 1 hasta c hacer 
+      mat3[i,j] <- mat[i,j] + mat2[i,j]
+    FPara
+  FPara
+FAccion
+

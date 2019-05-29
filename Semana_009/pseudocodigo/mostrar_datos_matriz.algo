@@ -1,0 +1,10 @@
+Accion mostrarM(tipo mat[][tam], Entero f, Entero c)
+D.V.
+  Entero i, j
+Inicio
+  Para i de 1 a f hacer
+    Para j de 1 a c hacer
+      Escribir(mat[i, j])
+    FPara
+  FPara
+FAccion

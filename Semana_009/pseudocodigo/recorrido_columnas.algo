@@ -1,0 +1,10 @@
+Accion llenarM(tipo mat[][tam], Entero f, Entero c)
+D.V.
+  Entero i, j
+Inicio
+  Para j de 1 a c hacer
+    Para i de 1 a f hacer
+      Leer(mat[i,j])
+    FPara
+  FPara
+FAccion
